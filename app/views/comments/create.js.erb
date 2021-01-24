@@ -1,0 +1,4 @@
+var new_comment=$("<%= j(render(@comment)) %>");
+$('#comments').prepend(new_comment);
+$('#commnt_<%= @comment.id %>').fadeIn(500);
+$('#new_comment')[0].reset();
